@@ -1,0 +1,234 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+
+<script src="js/jquery.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  </script>
+
+
+<meta name="format-detection" content="telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/style.css">
+
+
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/script.js"></script> 
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/jquery.ui.totop.js"></script><script type="text/javascript">
+
+  </script>
+
+
+<style type="text/css">
+/*.bg{
+	background-image:url('images/transport.jpg');
+}*/
+</style>
+<!-- dateinput styling -->
+<link rel="stylesheet" type="text/css"
+      href="/media/css/dateinput/large.css"/>
+
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});  
+ }); 
+</script>
+</head>
+<body >
+<header >
+  <div class="container"  >
+    <div class="row">
+      <div class="grid_12 rel">
+        <h1>
+          
+          </a>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <section id="stuck_container" style=''>
+  <!--==============================
+              Stuck menu
+  ========================= ========-->
+    <div class="container" >
+      <div class="row"  >
+        <div class="grid_12 ">
+          <div class="navigation ">
+            <nav>
+              <ul class="sf-menu">
+               <li ><a href="home.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li><a href="news.html">News</a></li>
+               <li><a href="contact us.html">Contact Us</a></li>
+             </ul>
+            </nav>
+            <div class="clear"></div>
+          </div>       
+         <div class="clear"></div>  
+        </div>
+     </div> 
+    </div> 
+  </section></header>
+
+
+
+
+
+<section style="background-image:url('images/transport1.jpeg');background-repeat: no-repeat;background-size:100em;background-attachment: fixed;">
+<div class='container' style='background-color:mintcream;padding:1em;'>
+<div class="w3-card-4" style='' >
+  <div class="w3-container w3-green">
+    <h2 style='color:white;padding-top:8px;height:1em;font-size:40px;'><i>Household expenses</i></h2>
+  </div>
+  <form class="w3-container" action="houseCharge.php" method='POST' name='transport' id='transport'>
+
+
+    <p>
+    <label class="w3-label w3-text-brown" required><b>Date</b></label>
+   <input type='date' id="date1"  name='date1' class='w3-input w3-border w3-sand'   autofocus >
+    </p>
+
+
+    <p>
+    <label class="w3-label w3-text-brown"><b>Remarks</b></label>
+    <textarea name='entry' class="w3-input w3-border w3-sand" id='entry' style=""  value=$entry placeholder='Any Remark regarding this entry for future' autofocus 
+    autocomplete='off'></textarea>
+    </p>
+
+
+    <p style='width:40%;float:left;display:inline-block;'>
+    <label class="w3-label w3-text-brown"><b>Expense Subcatogry1</b></label>
+    <textarea name='subCat1' id='subCat1' class="w3-input w3-border w3-sand"  placeholder="Expense subcatogry1" autofill='off'    autocomplete='off'></textarea></p>
+
+
+    <p style='width:40%;float:left;display:inline-block;margin-left:25px;'>
+    <label class="w3-label w3-text-brown"><b>amount</b></label>
+   <input  name='sub1' id='sub1' class="w3-input w3-border w3-sand" style='height:4.2em;'  placeholder="Expense amount" pattern="\d*" autofill='off' 
+   onblur='check()'    autocomplete='off' required>
+    </p>
+
+
+    <p style='width:40%;float:left;display:inline-block;'>
+    <label class="w3-label w3-text-brown"><b>Expense Subcatogry2</b></label>
+    <textarea name='subCat2' id='subCat2' class="w3-input w3-border w3-sand"  placeholder="Expense subcatogry2" autofill='off'    autocomplete='off'></textarea></p>
+
+
+    <p style='width:40%;float:left;display:inline-block;margin-left:25px;'>
+    <label class="w3-label w3-text-brown"><b>amount</b></label>
+   <input  name='sub2' id='sub2' class="w3-input w3-border w3-sand" style='height:4.2em;'  placeholder="Expense amount" pattern="\d*" autofill='off' 
+   onblur='check()'    autocomplete='off'>
+    </p>
+
+
+    <p style='width:40%;float:left;display:inline-block;'>
+    <label class="w3-label w3-text-brown"><b>Expense Subcatogry3</b></label>
+    <textarea name='subCat3' id='subCat3' class="w3-input w3-border w3-sand"  placeholder="Expense subcatogry3" autofill='off'    autocomplete='off'></textarea></p>
+
+
+    <p style='width:40%;float:left;display:inline-block;margin-left:25px;'>
+    <label class="w3-label w3-text-brown"><b>amount</b></label>
+   <input  name='sub3' id='sub3' class="w3-input w3-border w3-sand" style='height:4.2em;'  placeholder="Expense amount" pattern="\d*" autofill='off' 
+   onblur='check()'    autocomplete='off'>
+    </p>
+
+
+    <p style='width:40%;float:left;display:inline-block;'>
+    <label class="w3-label w3-text-brown"><b>Expense Subcatogry4</b></label>
+    <textarea name='subCat4' id='subCat4' class="w3-input w3-border w3-sand"  placeholder="Expense subcatogry4" autofill='off'    autocomplete='off'></textarea></p>
+
+
+    <p style='width:40%;float:left;display:inline-block;margin-left:25px;'>
+    <label class="w3-label w3-text-brown"><b>amount</b></label>
+   <input  name='sub4' id='sub4' class="w3-input w3-border w3-sand" style='height:4.2em;'  placeholder="Expense amount" pattern="\d*" autofill='off' 
+   onblur='check()'    autocomplete='off'>
+    </p>
+
+
+    <p style='width:40%;float:left;display:inline-block;'>
+    <label class="w3-label w3-text-brown" style='font-size:25px;''><b></b></label><br><br>
+        <label class="w3-label w3-text-brown" style='font-size:45px;margin-left:20px;'><b>Total</b></label>
+
+    </p>
+
+
+    <p style='width:40%;float:left;display:inline-block;margin-left:25px;'>
+    <label class="w3-label w3-text-brown"><b></b></label><br><br>
+   <label class="w3-label w3-text-brown"  id='amount' style='font-size:45px;margin-left:20px;'><b>0</b></label>
+    </p>
+      
+    <p>
+    <button type='submit' value='Add Entry To Expense Menu' class="w3-input w3-border  w3-btn w3-brown" style='width:40%;margin-left:19em;'>Add Entry To Expense Menu</button></p>
+  </form>
+</div>
+</div>
+
+</div></section>
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container" >
+    <div class="row" >
+      <div class="grid_12" > 
+        
+          <div style="color:white;font-size:150%;margin-left:10em;font-style:italic;font-family:georgia;" > A budget tells us what we can't afford, but it doesn't keep us from buying it....
+
+
+        </div>
+      </div>
+    </div>
+  </div>  
+</footer>
+<script type="text/javascript">
+	function check(){
+	var total=0;
+	var a1,a2,a3,a4;
+	a1=document.transport.sub1.value;
+
+	a2=document.transport.sub2.value;
+
+	a3=document.transport.sub3.value;
+
+	a4=document.transport.sub4.value;
+	
+	
+		if(parseInt(a1))
+			{total+=parseInt(a1)
+				;}
+	 if(parseInt(a2))
+
+			{total+=parseInt(a2)
+				;}
+if(parseInt(a3))
+
+			{total+=parseInt(a3)
+				;}
+	if(parseInt(a4))
+
+			{total+=parseInt(a4)
+				;}
+
+	  
+	document.getElementById('amount').innerHTML=total;
+}
+</script>
+
+  
+
+  </body></html>

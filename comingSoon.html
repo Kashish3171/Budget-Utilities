@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>News</title>
+<meta charset="utf-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="format-detection" content="telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/script.js"></script> 
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/jquery.ui.totop.js"></script><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});  
+ }); 
+</script>
+<style>
+tr,th{
+  font-size:16px;color:black; font-family:verdana;
+}
+input{
+  border:2px solid black;
+}
+td{
+padding:10px;
+}
+table{
+ font-size:20px;color:black;border:2px solid black;margin-left:5em;  margin-top: 20px;background-color: white;display: block;float: left;
+}
+
+</style>
+</head>
+<body style="background-color: mintcream;">
+<!--==============================
+              header
+=================================-->
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="grid_12 rel">
+        <h1>
+          
+        </h1>
+      </div>
+    </div>
+  </div>
+  <section id="stuck_container">
+  <!--==============================
+              Stuck menu
+  =================================-->
+    <div class="container">
+      <div class="row">
+        <div class="grid_12 ">
+          <div class="navigation ">
+            <nav>
+              <ul class="sf-menu">
+               <li><a href="home.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li ><a href="News.html">News</a></li>
+               <li><a href="contact us.html">Contacts Us</a></li>
+             </ul>
+            </nav>
+            <div class="clear"></div>
+          </div>       
+         <div class="clear"></div>  
+        </div>
+     </div> 
+    </div> 
+  </section>
+</header>
+<!-- analytics --><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/E61B7E27-6AF2-0C45-8FCF-89B3C0BAE644/main.js" charset="UTF-8"></script><script>window.google_analytics_uacct = 'UA-22117143-5';</script><script>var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-22117143-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s =document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+<script>function $(){var elements=new Array();for (var i=0;i<arguments.length;i++){var element=arguments[i];if(typeof element=='string')element=document.getElementById(element);if(arguments.length==1)return element;elements.push(element);}return elements;}
+function interest(){var principal=$('principal').value;var rate=$('rate').value;var time=$('time').value;var itype=$('itype').value;var crate=$('crate').value;var time=$('time').value;var irate=rate/crate;var inttamt=$('inttamt').value;var decimal=2;if( itype=='c' ){$('inttamt').value=Math.round(($('principal').value * Math.pow((1+irate/100),(time/12*crate))*1-principal*1 ) *100)/100;}if(itype=='s' ){$('inttamt').value=Math.round((($('principal').value * rate * time/12)/100)*100)/100;}}
+function stb(){window.scrollTo(0,document.body.scrollHeight)}window.onload=function(){stb();}</script>
+
+<div id=outer style="margin-top:2em;"><div id=cover><div id=title style=""><a href='' target= title='' style="margin-top:;font-size:20px;font-family: verdana;margin-left: 10em;">Interest Calculator</a></div>
+<form name=intt><table  style="border:0px;"><col class=w55><col class=w45>
+<tr><td>Principal<td><input id=principal onchange=interest();>
+<tr><td>Interest Rate<td><input id=rate onchange=interest();>
+<tr><td>Interest Type<td><select id=itype onchange=interest();><option value=s>Simple<option value=c selected>Compound</select>
+<tr><td>Interest Frequency<td><select id=crate onchange=interest();><option value=12>Monthly<option value=4 selected>Quarterly<option value=2>Half Yearly<option value=1>Yearly</select>
+<tr><td>Period (months)<td><input id=time onchange=interest();>
+<tr><td style="padding:-25px;"><a href=#nogo class="b btn" onclick=document.intt.reset();>Reset</a><td style="float:left;"><a href=#nogo class="b btn" onclick=interest();>Submit</a>
+<tr><td class=bold>Interest Amt.<td><input class=op id=inttamt></table></form></div>
+
+        
+</body>
+</html>
