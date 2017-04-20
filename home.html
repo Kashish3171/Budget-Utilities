@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.js"></script><script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<meta name="google-signin-client_id" content="750298278235-1mvs1u31r757ekio5lbpq0boj0ok252n.apps.googleusercontent.com">
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer>
+  </script>
+
+<meta name="format-detection" content="telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+
+
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/script.js"></script> 
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/fbLogin.js"></script>
+<script src="js/googleLogin.js"></script>
+ <script>startApp();</script>
+ <script src="js\formValidation.js"></script>
+
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});  
+ }); 
+</script>
+<script>
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut(3000);
+	});
+
+</script>
+
+	<style type="text/css"><
+	.no-js #loader { display: none;  }
+   .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/icons/loader-128x/Preloader_2.gif) center no-repeat mintcream;
+}
+.page1_header .banner:hover {
+  background-color:black;
+}
+
+.page1_header .banner:first-child + .banner:hover{
+  background-color: black;
+}
+
+.page1_header .banner:first-child + .banner + .banner:hover {
+  background-color: black;
+}
+</style>
+</head>
+
+<body  class="page1" id="top"><div class="se-pre-con"></div>
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="grid_12 rel">
+        <h1>
+          
+          </a>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <section id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12 ">
+          <div class="navigation ">
+            <nav>
+              <ul class="sf-menu">
+               <li class="current"><a href="home.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li><a href="news.html">News</a></li>
+               <li><a href="contact us.html">Contact Us</a></li>
+             </ul>
+            </nav>
+            <div class="clear"></div>
+          </div>       
+         <div class="clear"></div>  
+        </div>
+     </div> 
+    </div> 
+  </section>
+  <section class="page1_header">
+    <div class="container">
+      <div class="row">
+        <div class="grid_4">
+          <a href="loginCheck.php"  class="banner"><div class="maxheight">
+           <div class="fa fa-bold" ></div>My Budget</div>
+          </a>
+          <a   href="#login-box"  class="login-window banner"><div class="maxheight">
+           <div class="fa fa-laptop" id="login"></div>Login</div>
+          </a>
+          <a href="#signup-box" class="signup-window banner "><div class="maxheight1">
+            <div class="fa fa-user" ></div>New User</div>
+          </a>
+          <a href="loginCheck1.php"  class="banner"><div class="maxheight1">
+          <div class="fa fa-cogs"></div>Tools</div>
+          </a>
+        </div>
+        <div class="grid_5">
+          <h2 style="color:black">Spend Save and Manage</h2>
+          We help you live  peacefully...
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+<div class="block-1">
+  <div class="container">
+    <div class="row">
+      <div class="grid_3" style="color:black">
+        <div class="block-1_count"></div>
+        <b>Budget</b> <br><b> Managment</b>
+        <div class="clear"></div>
+      </div>
+      <div class="grid_3" style="color:black">
+        <div class="block-1_count"></div>
+        My Tasks<br>Calculators
+        <div class="clear"></div>
+      </div>
+      <div class="grid_3" style="color:black">
+        <div class="block-1_count"></div>
+        News <br> Update
+        <div class="clear"></div>
+      </div>
+      <div class="grid_3" style="color:black">
+        <a href="#tech-box" class="tech-window support"><img src="images/support.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="content"><div class="ic"></div><hr>
+  <div class="container" style="background-image:url(''); background-color:mintcream;background-attachment:;background-repeat:no-repeat;">
+    <div class="row">
+      <div class="grid_10 preffix_1 ta__center">
+        <div class="greet">
+          <h2 class="head__1">
+            Welcome
+          </h2>
+          <p style="font-size:150%;font-family:georgia;">Read more about the <a href="about.html" rel="nofollow" class="color1">Budget Managment</a> here. </p>
+          
+          <p style="font-size:150%;margin-left:-18px;font-family:georgia;">Read more about the <a href="about.html" rel="nofollow" class="color1"><b>Tools</b></a> here.</p>
+        <p style="font-size:130%;color:teal;font-family:georgia;"> Budget Utilities is an effort to help people manage their budget efficiently and simply. We manage your daily
+        expenses and savings. We help you in keeping your budget documented and with your tools. We constantly track bugs and errors. Any issue  regarding Budget
+        Utilities would be sorted 
+        out within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<hr>
+  <div class="container"  style="background-image:url(''); background-color:mintcream;background-attachment:;background-repeat:no-repeat;">
+    <div class="row">
+      <div class="grid_5">
+        <h4 style="color:sienna;margin-left:15px;"> Devlopers</h4>
+        <img src="" alt="" class="img_inner fleft">
+          
+           <p style="margin-left:15px; font-size:130%;font-family:georgia;">Kashish Goyal</p>
+            <p style="margin-left:15px; font-size:130%;font-family:georgia;">Siddhant Raj</p>
+             <p style="margin-left:25px; font-size:130%;font-family:georgia;">(JIIT)</p>
+      </div>
+      <div class="grid_4">
+        <h4 style="color:sienna">Key Features</h4>
+        <ul class="list-1">
+      
+          <li style="color:teal;font-size:130%;"><a href="budgetManagement.php">Budget Managment</a></li>
+          <li style="color:teal;font-size:130%;"><a href="loginCheck1.php">Tools</a></li>
+          <li style="color:teal;font-size:130%;"><a href="loginCheck1.php">My Tasks</a></li>
+          
+        </ul>
+      </div>
+      <div class="grid_3">
+        <h4 style="color:sienna">Contact Info</h4>
+        <address>
+          <ul class="cont_address">
+          
+           
+            <li style="color:teal;font-size:130%; margin-left:15px;"><a href="contact us.html">JIIT
+           <br> Noida,India
+              
+               </a></li>
+          </ul>
+        </address>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer">
+  <div class="container" >
+    <div class="row" >
+      <div class="grid_12" > 
+        
+          <div style="color:white;font-size:150%;margin-left:10em;font-style:italic;font-family:georgia;" > A budget tells us what we can't afford, but it doesn't keep us from buying it....
+
+
+        </div>
+      </div>
+    </div>
+  </div>  
+</footer>
+<!--LOGIN--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->''
+<!--login-->
+<div id="login-box" class="login-popup"  style="background-color: azure;"><div id="nav1" class="" style="font-size:20px;margin-top:-80px;margin-left:150px;line-height:40px;padding-left:30px;padding-right:30px;padding-bottom:40px;padding-top:5px;" >
+        <ul class="sf-menu1">
+        <li>
+
+          <a href="#signup-box" class='signup-window' style="padding:0px;font-size: 20px;margin-left:0px;" >New User,Please Sign Up</a><br>
+      <div class='login-window' style="padding:0px;a:visited:red;font-size: 30px;margin-left:55px;" >Login</div</li></ul></div>
+<img src="images/close.png" style="height:20px;width:20px;" class="btn_close" title="Close Window" alt="Close" style='margin-top:-10px;'/>
+  <form method="post" class="signin" action="login.php" style="display:inline-block;float:left;">
+        
+       <fieldset class="textbox" >
+        <label class="username">
+        <span> Email/Mobile Number</span>
+        <input type="text" id="username" name="email" value=""  autocomplete="off"  placeholder="Email" style="height:1.5em;width:12em;background-color: mintcream; " autofocus required>
+        </label>
+        <label class="password">
+        <span>Password</span>
+        <input type="password" id="password" name="password" value="" autocomplete="off" placeholder="Password" style="height:1.5em;width:12em;" autofocus required>
+        </label> 
+        
+        <button class="submit button" type="submit" style="margin-left:15px;">Login</button><br>
+        <p>
+           
+        </p>     
+
+
+
+        </fieldset>
+          </form>
+
+        <hr style="display:inline-block;float:left;margin-left:25px;"" width="0.5" size="200" > 
+
+        <div style="display:inline-block;float:left;margin-left:25px;" onclick="login()" id="login">  
+
+       <i class="fa fa-facebook fa-5x" aria-hidden="true" style="margin-left:100px;color:#3b5999;opacity:1;" id='fb' > </i>
+       
+      </div>
+       <div style="display:inline-block;float:left;margin-left:15px;margin-top:30px" id="customBtn"> 
+
+       <i class="fa fa-google-plus fa-5x" aria-hidden="true" id='google' style="margin-left:100px;color:#d34836"> </i>
+       
+        </div>
+        <span style="float:right;font-size: 20px;color:black;margin-left:-10px;margin-top:10px;">For User specific enteries,please use Budget Utility Login</span>
+</div>
+       
+<!--signup-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->''
+<!--Sign up-->
+<div id="signup-box" ng-app=""  class="login-popup"  style="background-color: azure;"><div id="nav1" class="" style="font-size:20px;margin-top:-80px;margin-left:150px;line-height:40px;padding-left:20px;padding-right:0px;padding-bottom:20px;padding-top:10px;" >
+        <ul class="sf-menu1">
+        <li class="" style="padding:0px;margin-left:45px;font-size:30px;">Sign Up
+     <!-- <a href="#login-box" class='login-window' style="padding:10px;a:visited:red;" >Login</a>--></li></ul></div>
+
+<img src="images/close.png" style="height:20px;width:20px;margin-top: -70px;" class="btn_close" title="Close Window" alt="Close" />
+  <form method="post" name='signUp' onsubmit='return val()' class="signin" action="signUp.php" style="display:inline-block;float:left;margin-left:140px;" >
+            
+       <fieldset class="textbox"  >
+        <label class="username">
+        <span> First Name</span>
+        <input type="text" id="firstName" name="firstName" value=""  onblur='first(this)' autocomplete="off" placeholder="First name" style="height:1.5em;width:12em;color:teal; "  autofocus required  minlength="4">
+
+     <p style="display:inline-block;float:right;margin-left:-12px;font-size:16px;" id='error1'></p>
+        </label>
+        <label class="username">
+        <span>Last Name</span>
+        <input type="text" id="lastName" name="lastName" value=""  autocomplete="off" onblur='last(this)'  placeholder="Last name" style="height:1.5em;width:12em;color:teal;"  required minlength="3"> 
+     <p style="display:inline-block;float:right;margin-left:-12px;font-size:16px;" id='error2'></p>
+        </label> 
+     
+        
+        <label class="username">
+        <span> Email/Mobile No</span>
+        <input type="text" id="username" name="email" value="" ng-model="myVar" autocomplete="off"  onblur='emai(this)' placeholder="Email" style="height:1.5em;width:12em;color:teal;"  required>
+         
+     <p style="display:inline-block;float:right;margin-left:-12px;font-size:16px;" id='error3'></p>
+        </label>
+        <label class="password">
+        <span>Password</span>
+        <input type="password" id="password" name="password" value="" autocomplete="off" onblur='pass(this)'  placeholder="Password" style="height:1.5em;width:12em;color:teal;"  required minlength='6'>
+
+     <p style="display:inline-block;float:right;margin-left:-12px;font-size:16px;" id='error4'></p>
+        </label> 
+
+      <button class="submit value='submit' button"  type="submit"  style="margin-left:15px;margin-top:25px;">Sign Up</button><br>
+             
+          </form>
+          </div>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+$(document).ready(function() {
+$('a.login-window').click(function() {
+    
+            //Getting the variable's value from a link 
+    var loginBox = $(this).attr('href');
+
+    //Fade in the Popup
+    $(loginBox).fadeIn(1000);
+    
+    //Set the center alignment padding + border see css style
+    var popMargTop = ($(loginBox).height() + 24) / 2; 
+    var popMargLeft = ($(loginBox).width() + 24) / 2; 
+    
+    $(loginBox).css({ 
+        'margin-top' : -popMargTop,
+        'margin-left' : -popMargLeft
+    });
+    
+    // Add the mask to body
+    $('body').append('<div id="mask"></div>');
+    $('#mask').fadeIn(1000);
+    
+    return false;
+});
+
+// When clicking on the button close or the mask layer the popup closed
+$('.btn_close, #mask').live('click', function() { 
+  $('#mask , .login-popup').fadeOut(300 , function() {
+    $('#mask').remove();  
+}); 
+return false;
+});
+});
+</script>
+
+
+<script>
+$(document).ready(function() {
+$('a.signup-window').click(function() {
+    
+            //Getting the variable's value from a link 
+    var loginBox = $(this).attr('href');
+
+    //Fade in the Popup
+    $(loginBox).fadeIn(1000);
+    
+    //Set the center alignment padding + border see css style
+    var popMargTop = ($(loginBox).height() + 24) / 2; 
+    var popMargLeft = ($(loginBox).width() + 24) / 2; 
+    
+    $(loginBox).css({ 
+        'margin-top' : -popMargTop,
+        'margin-left' : -popMargLeft
+    });
+    
+    // Add the mask to body
+    $('body').append('<div id="mask"></div>');
+    $('#mask').fadeIn(1000);
+    
+    return false;
+});
+
+// When clicking on the button close or the mask layer the popup closed
+$('a.close, #mask').live('click', function() { 
+  $('#mask , .login-popup').fadeOut(300 , function() {
+    $('#mask').remove();  
+}); 
+return false;
+});
+});
+</script>
+<script>
+
+	$(document).ready(function(){
+		$("#fb,#google").hover(function(){
+		$(this).css('opacity', '0.6');
+
+	},
+	function(){
+     $(this).css('opacity','1.0');
+	});
+	});
+	/*$(document).ready(function(){
+		$("#fb,#google").hover(function(){
+		$(this).animate({opacity:'0.6'},500,function(){
+
+        
+           $(this).animate({opacity:'1.0'},200);
+
+
+		});
+
+	});});
+	*/
+	/*$(document).ready(function(){
+    $("#fb").hover(function(){
+        $(this).css("visibility", "0.5");
+        }, function(){
+        $(this).css("background-color", "pink");
+    });
+});*/
+</script>
+<!--technical form-->
+<div id="tech-box" class="tech-popup"  style='height:6em;background-color: azure;'>
+        
+ <img src="images/close.png" style="height:20px;width:20px;" class="btn_close" title="Close Window" alt="Close" /></a>
+  <form method="post" class="signin" action="technical.php" style="display:inline-block;float:left;">
+       <fieldset class='textbox' style='margin-top:-5em;'>
+       <label class='username' style='margin top:-2em;'>
+        <span>Phone</span>
+        <input type="text" id="phone" name="phone" value="" autocomplete="off" placeholder="Phone"  style="height:1em;width:12em;border:1px solid grey;background-color:mintcream;" autofocus required minlength="10" maxlength='10' pattern="\d*">
+      
+        </label>
+         <label class="message">
+        <span style=''>Technical Issue</span>
+        <textarea id="message" name="message" value="" autocomplete="off" placeholder="Please,describe the issue " size='500' style='height:80px;width:500px;background-color:mintcream;color:teal;font-size:20px;'autofocus required cols='60' rows='8'  required maxlength="500" minlength="10"></textarea>
+        
+        </label>
+
+     </fieldset>
+        <button class="submit button" type="submit" style="margin-left:40px;background-color:;">Report</button><br>
+         </form>
+</div>
+<script>
+$(document).ready(function() {
+$('a.tech-window').click(function() {
+    
+            //Getting the variable's value from a link 
+    var loginBox = $(this).attr('href');
+
+    //Fade in the Popup
+    $(loginBox).fadeIn(1000);
+    
+    //Set the center alignment padding + border see css style
+    var popMargTop = ($(loginBox).height() + 24) / 2; 
+    var popMargLeft = ($(loginBox).width() + 24) / 2; 
+    
+    $(loginBox).css({ 
+        'margin-top' : -popMargTop,
+        'margin-left' : -popMargLeft
+    });
+    
+    // Add the mask to body
+    $('body').append('<div id="mask"></div>');
+    $('#mask').fadeIn(1000);
+    
+    return false;
+});
+
+// When clicking on the button close or the mask layer the popup closed
+$('img.btn_close, #mask').live('click', function() { 
+  $('#mask , #tech-box').fadeOut(300 , function() {
+    $('#mask').remove();  
+}); 
+return false;
+});
+});
+</script>
+
+</body>
+</html>
